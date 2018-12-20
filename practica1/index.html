@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vuejs 2</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script src="components/message.js"></script>
+  <script src="components/computed-properties.js"></script>
+  <script src="components/methods.js"></script>
+  <script src="components/vmodel.js"></script>
+  <script src="components/vmodel-checkboxes.js"></script>
+  <script src="components/emit.js"></script>
+</head>
+<body>
+  <div id="app">
+    <message></message>
+    <computed-properties></computed-properties>
+    <methods></methods>
+    <vmodel></vmodel>
+    <vmodel-checkboxes></vmodel-checkboxes>
+    <emit @showCarBrand="showCarBrandFromEmitCpm($event)"></emit>
+  </div>
+  <script>
+    new Vue({
+      el:'#app',
+      methods: {
+        showCarBrandFromEmitCpm(carBrand) {
+          alert(carBrand)
+        }
+      }
+    })
+  </script>
+</body>
+</html>
