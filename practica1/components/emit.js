@@ -4,7 +4,7 @@ Vue.component('emit', {
       carBrand: 'Toyota'
     }
   },
-    template:`
+  template:`
     <div>
       <h2> Emitir eventos con Vuejs 2 </h2>
       <p @click="$emit('showCarBrand',carBrand)"> Pulsa aquí para emitir un evento a la instancia ROOT de Vuejs</p>
