@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Vuejs 2</title>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="directives/focus.js"></script>
 
   <script src="components/message.js"></script>
   <script src="components/computed-properties.js"></script>
@@ -18,6 +19,13 @@
   <script src="components/loops.js"></script>
   <script src="components/conditionals.js"></script>
   <script src="components/slots.js"></script>
+  <script src="components/watchers.js"></script>
+  <script src="components/computed-properties-get-set.js"></script>
+  <script src="components/dynamic-components/cmp1.js"></script>
+  <script src="components/dynamic-components/cmp2.js"></script>
+  <script src="components/dynamic-components/cmp3.js"></script>
+  <script src="components/load-dynamic-components.js"></script>
+  <script src="components/mixins.js"></script>
 </head>
 <body>
   <div id="app" style="margin-bottom: 100px">
@@ -34,11 +42,18 @@
     <loops></loops>
     <conditionals></conditionals>
     <slots>
+      <p> Contenido del slot para el cuerpo </p>
       <template slot="header">
-        <p> Contenido del slot para el cuerpo </p>
         <h3> Header del layout con slots </h3>
       </template>
+      <template slot="footer">
+        <p> Footer del layout con Slots </p>
+      </template>
     </slots>
+    <watchers></watchers>
+    <computed-properties-get-set></computed-properties-get-set>
+    <load-dynamic-components></load-dynamic-components>
+    <mixins></mixins>
   </div>
   <script>
     new Vue({

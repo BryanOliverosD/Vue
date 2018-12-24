@@ -7,7 +7,7 @@ Vue.component('slots', {
           <slot name="header"></slot>
         </header>
         <main>
-          <slot></sloy>
+          <slot></slot>
         </main>
         <footer>
           <slot name="footer"></slot>
